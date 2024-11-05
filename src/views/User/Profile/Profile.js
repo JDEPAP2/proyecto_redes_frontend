@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaEnvelope, FaPencilAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Navbar from "components/Navbar";
@@ -6,7 +6,7 @@ import bg from "assets/img/Bg.png";
 import { AuthContext } from "contexts/AuthProvider";
 
 export default function Profile() {
-    const { handleLogout } = useContext(AuthContext);
+    const { handleLogout, user } = useContext(AuthContext);
     const navigate = useNavigate();
     const [isEditing, setIsEditing] = useState(false);
     const [userData, setUserData] = useState({
@@ -14,6 +14,13 @@ export default function Profile() {
         email: "c.arana@gmail.com",
         fecha: "November 22",
     });
+
+    useEffect(()=>{
+        setUserData({
+            fecha: userData.fecha,
+            ...user
+        })
+    },[user])
 
     const handleEditToggle = () => {
         setIsEditing(!isEditing);

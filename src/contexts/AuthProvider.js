@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
   const handleLogin = async (credentials) => {
     try {
       const userData = await login(credentials);
-      setUser(userData);
+      setUser(userData.user);
       localStorage.setItem('user', JSON.stringify(userData));
     } catch (error) {
       console.error('Login failed:', error);
@@ -23,7 +23,7 @@ const AuthProvider = ({ children }) => {
   const handleRegister = async (userData) => {
     try {
       const newUser = await register(userData);
-      setUser(newUser);
+      setUser(newUser.user);
       localStorage.setItem('user', JSON.stringify(newUser)); // Guardar sesión en localStorage después del registro
     } catch (error) {
       console.error('Registration failed:', error);

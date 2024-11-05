@@ -92,7 +92,7 @@ export default function LoginForm() {
                 </form>
 
                 <p className="text-center text-gray-500 mt-4">
-                    Para registrarte presiona <a className="cursor-pointer hover:underline" onClick={() => navigate("/register")}>aqui</a>
+                    <a className="cursor-pointer hover:underline" onClick={() => navigate("/register")}>Para registrarte presiona aqui</a>
                 </p>
             </div>
         </div>

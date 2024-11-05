@@ -75,7 +75,8 @@ export default function Navbar(props, { children }) {
           {user ? (
             <div
               className="text-xl font-normal text-emerald-300 py-3 px-5 cursor-pointer flex items-center"
-              onClick={() => navigate(`/user/${user.id}`)}
+              onClick={() => navigate(`/user/${user.id}`)
+              }
             >
               <FaUserCircle className="mr-2" /> Perfil
             </div>
