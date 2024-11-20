@@ -50,7 +50,17 @@ export default function Navbar(props, { children }) {
           >
             Sobre Nosotros
           </div>
-          <div
+          {user && user?.rol === "administrador" && (<div
+            className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-min ${
+              location === "/services"
+                ? "border-white"
+                : "hover:border-white border-transparent"
+            }`}
+            onClick={() => navigate(user ? "/services" : "/login")}
+          >
+            Servicios
+          </div>)}
+          {user && user?.rol === "administrador" && (<div
             className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-min ${
               location === "/quotes"
                 ? "border-white"
@@ -59,7 +69,18 @@ export default function Navbar(props, { children }) {
             onClick={() => navigate(user ? "/quotes" : "/login")}
           >
             Cotizaciones
-          </div>
+          </div>)}
+          {user && user?.rol !== "administrador" && (<div
+            className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-min ${
+              location === "/events"
+                ? "border-white"
+                : "hover:border-white border-transparent"
+            }`}
+            onClick={() => navigate(user ? "/events" : "/login")}
+          >
+            Eventos
+          </div>)}
+
           <div
             className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-min ${
               location === "/contact"

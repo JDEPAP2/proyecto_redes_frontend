@@ -1,10 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Navbar from "components/Navbar.js";
 import bg from "assets/img/Bg.png";
 
 export default function Landing() {
-  const navigate = useNavigate();
 
   return (
     <>

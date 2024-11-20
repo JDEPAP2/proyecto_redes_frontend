@@ -15,9 +15,9 @@ export default function Contact() {
             
             <div className="bg-emerald-300 backdrop-blur-xl bg-opacity-20 w-full max-w-3xl p-10 md:p-16 rounded-xl shadow-lg mx-4 text-center">
                 <div className="text-white text-lg leading-relaxed mb-6">
-                <p>• Teléfono: (+XX) XXX-XXX-XXXX</p>
+                <p>• Teléfono: (+57) 304-484-6068</p>
                 <p>• Correo electrónico: <a href="mailto:contacto@tuevento.com" className="underline">contacto@tuevento.com</a></p>
-                <p>• Dirección: Calle del Evento #123, Ciudad, País</p>
+                <p>• Dirección: Haciendas #123, Cali, Colombia</p>
                 </div>
 
                 <h3 className="text-xl font-semibold text-white mb-4">Nuestras redes</h3>

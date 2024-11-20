@@ -12,6 +12,10 @@ import Profile from "views/User/Profile/Profile";
 import Cotizaciones from "views/Cotizaciones/Cotizaciones";
 import AuthProvider from "contexts/AuthProvider";
 import { AuthContext } from "contexts/AuthProvider";
+import Eventos from "views/Eventos/Eventos";
+import Servicios from "views/Servicios/Servicios";
+import CotizacionesEvento from "views/Cotizaciones/CotizacionesEvento";
+import CrearCotizacion from "views/Cotizaciones/CrearCotizacion";
 
 const PrivateRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
@@ -28,14 +32,18 @@ root.render(
       <Route path="/login" element={<Auth isRegister={false} />} />
       <Route path="/register" element={<Auth isRegister={true} />} />
       <Route path='/' element={<Landing/>} />
-      {/* <Route path='/service' element={<Services/>} /> */}
       <Route path='/about' element={<About/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/user/:id' element={<PrivateRoute><Profile /></PrivateRoute>} />
-      <Route path='/quotes/' element={<PrivateRoute><Cotizaciones /></PrivateRoute>} />
+      <Route path='/events' element={<PrivateRoute><Eventos /></PrivateRoute>} />
+      <Route path='/services' element={<PrivateRoute><Servicios /></PrivateRoute>} />
+      <Route path='/quotes' element={<PrivateRoute><Cotizaciones /></PrivateRoute>} />
+      <Route path='/quotes-event/:eventoId' element={<PrivateRoute><CotizacionesEvento /></PrivateRoute>} />
+      <Route path='/quote/:eventoId' element={<PrivateRoute><CrearCotizacion /></PrivateRoute>} />
     </Routes>
   </BrowserRouter>
   </AuthProvider>
   </React.StrictMode>
 );
+
 

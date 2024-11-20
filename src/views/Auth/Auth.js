@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 import Navbar from "components/Navbar.js";
 import LoginForm from "./Components/LoginForm";
@@ -8,8 +7,6 @@ import bg from "assets/img/Bg.png";
 import DualTwoContainer from "components/DualTwoContainer";
 
 export default function Auth({ isRegister }) {
-  const navigate = useNavigate();
-
   return (
     <>
       <Navbar />

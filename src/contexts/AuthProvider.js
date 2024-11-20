@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
     try {
       const userData = await login(credentials);
       setUser(userData.user);
-      localStorage.setItem('user', JSON.stringify(userData));
+      localStorage.setItem('user', JSON.stringify(userData.user));
     } catch (error) {
       console.error('Login failed:', error);
       throw error;
@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
     try {
       const newUser = await register(userData);
       setUser(newUser.user);
-      localStorage.setItem('user', JSON.stringify(newUser)); // Guardar sesión en localStorage después del registro
+      localStorage.setItem('user', JSON.stringify(newUser.user));
     } catch (error) {
       console.error('Registration failed:', error);
       throw error;
@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
 
   const handleLogout = () => {
     setUser(null);
-    localStorage.removeItem('user'); // Eliminar la sesión del almacenamiento local
+    localStorage.removeItem('user');
   };
 
   return (
