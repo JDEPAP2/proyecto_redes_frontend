@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/proyecto_redes_frontend/static/css/main.1c137d89.css",
-    "main.js": "/proyecto_redes_frontend/static/js/main.27fbfe82.js",
+    "main.css": "/proyecto_redes_frontend/static/css/main.ce2aaec4.css",
+    "main.js": "/proyecto_redes_frontend/static/js/main.55d60ebb.js",
     "static/media/Bg.png": "/proyecto_redes_frontend/static/media/Bg.fc0a0560fbc9d96ff98c.png",
     "static/media/fa-solid-900.svg": "/proyecto_redes_frontend/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
     "static/media/fa-brands-400.svg": "/proyecto_redes_frontend/static/media/fa-brands-400.216edb96b562c79adc09.svg",
@@ -19,11 +19,11 @@
     "static/media/fa-regular-400.woff": "/proyecto_redes_frontend/static/media/fa-regular-400.3672264812746c3c7225.woff",
     "static/media/fa-regular-400.woff2": "/proyecto_redes_frontend/static/media/fa-regular-400.68c5af1f48e2bfca1e57.woff2",
     "index.html": "/proyecto_redes_frontend/index.html",
-    "main.1c137d89.css.map": "/proyecto_redes_frontend/static/css/main.1c137d89.css.map",
-    "main.27fbfe82.js.map": "/proyecto_redes_frontend/static/js/main.27fbfe82.js.map"
+    "main.ce2aaec4.css.map": "/proyecto_redes_frontend/static/css/main.ce2aaec4.css.map",
+    "main.55d60ebb.js.map": "/proyecto_redes_frontend/static/js/main.55d60ebb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c137d89.css",
-    "static/js/main.27fbfe82.js"
+    "static/css/main.ce2aaec4.css",
+    "static/js/main.55d60ebb.js"
   ]
 }

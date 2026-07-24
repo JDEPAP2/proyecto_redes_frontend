@@ -31,8 +31,16 @@ export default function Navbar(props, { children }) {
           <div className="sm:text-2xl flex items-center gap-2 text-md font-bold">
             <div className="lg:w-64 w-0 h-14 -my-3 px-5 flex items-center gap-5">
               <span
-                className="lg:block hidden text-green-300 text-4xl cursor-pointer"
-                onClick={() => navigate("/home")}
+                className="lg:block hidden text-green-300 text-4xl cursor-pointer hover:text-green-200 transition duration-200"
+                onClick={() => {
+                  if (!user) {
+                    navigate("/");
+                  } else if (user.rol === "cliente") {
+                    navigate("/events");
+                  } else {
+                    navigate("/services");
+                  }
+                }}
               >
                 Tú Evento
               </span>
@@ -43,9 +51,21 @@ export default function Navbar(props, { children }) {
           {!user && (
             <div
               className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-auto ${
+                location === "/"
+                  ? "border-white font-semibold"
+                  : "hover:border-white border-transparent"
+              }`}
+              onClick={() => navigate("/")}
+            >
+              Inicio
+            </div>
+          )}
+          {!user && (
+            <div
+              className={`border-b-4 cursor-pointer transition ease-in-out delay-100 w-auto ${
                 location === "/about"
-                  ? "border-blue-300"
-                  : "hover:border-blue-400 border-transparent"
+                  ? "border-white"
+                  : "hover:border-white border-transparent"
               }`}
               onClick={() => navigate("/about")}
             >
