@@ -44,7 +44,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
       <AuthProvider>
-   <BrowserRouter>
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path='/*' element={<Navigate to="/"/>} />
       <Route path="/login" element={<Auth isRegister={false} />} />
