@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293 296.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e30016;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffec00;
+      }
+
+      .cls-3 {
+        fill: #009035;
+      }
+
+      .cls-4 {
+        fill: #009ee0;
+      }
+    </style>
+  </defs>
+  <g id="svg41">
+    <g id="Layer1000">
+      <path id="path32" class="cls-3" d="m133,296.1h-.6c-36,0-68.7-14.4-92.6-37.8l36.3-38c14.4,14.4,34.3,23.2,56.2,23.2h.6v52.6h.1Z"/>
+      <path id="path34" class="cls-2" d="m257,208.4c-18.2,50.9-66.8,87.4-123.9,87.7v-52.6c27.2-.2,51.2-14.1,65.4-35.1h58.5Z"/>
+      <path id="path36" class="cls-4" d="m39.8,258.3C15.3,234.3,0,200.8,0,163.8,0,91,58.9,31.9,131.6,31.5l.3,31.2-.6,21.4c-43.6.5-78.8,36-78.8,79.7,0,22.1,9,42.1,23.5,56.5l-36.2,38Z"/>
+      <path id="path38" class="cls-1" d="m144.8,0c73.3,5.5,133.2,59,148.2,129.2h-89.6c-11.1-22.7-32.8-39.3-58.6-43.4V0h0Z"/>
+    </g>
+  </g>
+</svg>
